@@ -13,3 +13,17 @@ Mach-O universal binary with 2 architectures: [x86_64:Mach-O 64-bit executable x
 ```
 
 * i386は`10.9sdk`よりも古い
+
+```
+otool -L curl
+@loader_path/libcurl.4.dylib (compatibility version 8.0.0, current version 8.0.0)
+@loader_path/libidn.11.dylib (compatibility version 18.0.0, current version 18.12.0)
+@loader_path/libintl.8.dylib (compatibility version 10.0.0, current version 10.3.0)
+/usr/lib/libSystem.B.dylib (compatibility version 1.0.0, current version 1213.0.0)
+@loader_path/libiconv.2.dylib (compatibility version 8.0.0, current version 8.1.0)
+@loader_path/libssh2.1.dylib (compatibility version 2.0.0, current version 2.1.0)
+@loader_path/libssl.1.0.0.dylib (compatibility version 1.0.0, current version 1.0.0)
+@loader_path/libcrypto.1.0.0.dylib (compatibility version 1.0.0, current version 1.0.0)
+/System/Library/Frameworks/LDAP.framework/Versions/A/LDAP (compatibility version 1.0.0, current version 2.4.0)
+@loader_path/libz.1.dylib (compatibility version 1.0.0, current version 1.2.8)
+```
