@@ -5,9 +5,9 @@
 
 さらにいえば，curlはmacOSおよびWindowsにプリインストールされており，パッケージマネージャーでも保守することができるので，コンポーネントとして配付することもあまりスマートなやり方とはいえません。
 
-# 問題点
+## 問題点
 
-オリジナルのコンポーネントにインストールされているMac版のcurlは，i386/x86_64のUniversal Binaryですが，macos-109.sdkよりも古いツールセットでコンパイルされているので，公証にパスすることができません。
+オリジナルのコンポーネントにインストールされているMac版のcurlは，i386/x86_64のUniversal Binaryですが，macos-109.sdkよりも古いツールセットでコンパイルされているので，Appleの公証にパスすることができません。
 
 * The binary uses an SDK older than the 10.9 SDK.
 * The signature does not include a secure timestamp.
@@ -16,6 +16,8 @@
 
 https://developer.apple.com/documentation/security/notarizing_macos_software_before_distribution/resolving_common_notarization_issues#3087723
 
-# 回避策
+## 回避策
 
 システムのcurlで代用します。
+
+[Releases](https://github.com/4D-JP/dev-sendmail/releases)にv18版を置きました。
