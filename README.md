@@ -1,5 +1,5 @@
 # dev-sendmail
-[sendmail.4dbase](https://github.com/miyako/4d-component-sendmail)をサポートするためにCLI版のcURLを再コンパイルする
+[sendmail.4dbase](https://github.com/miyako/4d-component-sendmail)のメンテナンス（使わないでください）
 
 **注記**: curlの簡易的なラッパーである当該コンポーネントは，v14で非Unicodeの日本語メールを送受信するための回避策として公開されたものです。現行バージョンでこのようなものを使用するメリットはありません。
 
